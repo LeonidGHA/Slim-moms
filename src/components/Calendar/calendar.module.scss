@@ -1,0 +1,21 @@
+@import '../../common.scss';
+
+.calendar {
+  border: none;
+  padding-left: 20px;
+  font-family: 'Verdana';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  display: flex;
+  align-items: center;
+  color: $color-primary;
+  margin-bottom: 32px;
+
+  @include media-query(tablet) {
+    font-size: 34px;
+    line-height: 1.21;
+    margin-bottom: 60px;
+  }
+}

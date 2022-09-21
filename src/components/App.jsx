@@ -1,9 +1,10 @@
-
 // додаємо імпорти нижче, щоб менше було конфліктів
 import LoginPage from '../pages/LoginPage/LoginPage';
 import RegistrationPage from '../pages/RegistrationPage/RegistrationPage';
+import Calendar from './Calendar/Calendar';
 import DiaryAddProductForm from './DiaryAddProductForm/DiaryAddProductForm';
 import DiaryProductsList from './DiaryProductsList/DiaryProductsList';
+
 // import from
 // import from
 // import  from
@@ -33,6 +34,7 @@ export const App = () => {
       {/* <RegistrationForm /> */}
       {/* <RegistrationForm /> */}
       {/* <RegistrationForm /> */}
+      <Calendar />
       <DiaryAddProductForm // onSubmit={onAddProduct}
       />
       <DiaryProductsList
