@@ -5,29 +5,25 @@ import Calendar from './Calendar/Calendar';
 import DiaryAddProductForm from './DiaryAddProductForm/DiaryAddProductForm';
 import DiaryProductsList from './DiaryProductsList/DiaryProductsList';
 
+<<<<<<< Updated upstream
 // import from
 // import from
 // import  from
 // import from
 // import from
 // import  from
+=======
+// import LoginPage from '../pages/LoginPage/LoginPage';
+// import RegistrationPage from '../pages/RegistrationPage/RegistrationPage';
+// import DiaryAddProductForm from './DiaryAddProductForm/DiaryAddProductForm';
+// import DiaryProductsList from './DiaryProductsList/DiaryProductsList';
+>>>>>>> Stashed changes
 
 export const App = () => {
-  // const productList = useSelector(store => {
-  //   const filteredProduct = store.contacts.items.filter(item =>
-  //     item.name.toLowerCase().includes(store.filter.toLocaleLowerCase())
-  //   );
-  //   return filteredProduct;
-  // });
-
-  // const onAddProduct = data => {
-  //   const action = addItems(data);
-  //   dispatch(action);
-  // };
-
   return (
     // <div className="container">
     <>
+<<<<<<< Updated upstream
       <LoginPage />
       <RegistrationPage />
       {/* <RegistrationForm /> */}
@@ -40,6 +36,11 @@ export const App = () => {
       <DiaryProductsList
       // productList={productList} onDeleteProductListItem={onDelContact}
       />
+
+      <Header />
+   
+      <UserRoutes />
+
     </>
     // </div>
   );
