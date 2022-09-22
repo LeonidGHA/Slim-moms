@@ -32,7 +32,7 @@ export const App = () => {
 // import { login } from 'shared/api/auth-api';
 // import { dailyRate } from 'shared/api/daily-rate-api';
 // import { dailyUser } from 'shared/api/daily-rate-api';
-// import { productSearch } from 'shared/api/product-api';
+
 // import { dayProductPost } from 'shared/api/day-api';
 // import { dayProductDelete } from 'shared/api/day-api';
 // import { dayProductInfo } from 'shared/api/day-api';
@@ -65,8 +65,6 @@ export const App = () => {
 //   },
 // };
 // dailyUser(data);
-
-// productSearch('мясо');
 
 // dayProductPost({
 //   date: '2022-09-21',

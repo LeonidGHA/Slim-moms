@@ -5,7 +5,7 @@ export const instance = axios.create({
 });
 
 export const setToken = (accessToken = '') => {
-  instance.defaults.headers.Authorization = `Bearer ${accessToken}`;
+  instance.defaults.headers.authorization = `Bearer ${accessToken}`;
 };
 
 export const registration = async data => {
