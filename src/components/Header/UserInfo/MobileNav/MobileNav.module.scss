@@ -15,8 +15,8 @@
     top: -78px;
   }
   @include media-query(desktop) {
-  padding-bottom: 0;
-  margin-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
   &Info {
     margin-left: auto;
