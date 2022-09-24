@@ -1,26 +1,32 @@
-import { Logo, UserInfo, Navigation, Burger } from '/';
+import { useDispatch, useSelect } from 'react-redux';
+import { Logo, UserInfo, Navigation, UserInfoLogo, MobileNav } from '/';
 import s from './Header.module.scss';
 
 const Header = () => {
-  const isLogin = false;
+  const isLogin = true;
+  const dispatch = useDispatch()
+
 
   return (
-    <header className={s.header}>
-      <div className="container">
-        <nav className={s.nav}>
-          <Logo />
-
-          {isLogin ? (
-            <>
-              <UserInfo />
-              <Burger />
-            </>
-          ) : (
-            <Navigation />
-          )}
-        </nav>
-      </div>
-    </header>
+    <div>
+      <header className={ s.header }>
+        <div className="container">
+          <nav className={ s.nav }>
+            { isLogin ? (
+              <>
+                <UserInfoLogo />
+                <UserInfo />
+              </>
+            ) : (
+              <>
+                <Logo /> <Navigation />
+              </>
+            ) }
+          </nav>
+        </div>
+      </header>
+      { isLogin && <MobileNav /> }
+    </div>
   );
 };
 

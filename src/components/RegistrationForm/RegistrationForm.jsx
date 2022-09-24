@@ -41,6 +41,8 @@ function RegistrationForm({ onSubmit }) {
         className={s.input}
         type="text"
         name="name"
+        maxLength="15"
+        pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
         required
         autoFocus
         autoComplete="off"
@@ -52,6 +54,7 @@ function RegistrationForm({ onSubmit }) {
         className={s.input}
         type="email"
         name="email"
+        pattern="\S+@[a-z]+.[a-z]+"
         required
         autoComplete="off"
         value={email}
@@ -63,6 +66,8 @@ function RegistrationForm({ onSubmit }) {
         className={s.input}
         type="password"
         name="password"
+        minLength="8"
+        maxLength="15"
         required
         value={password}
         placeholder="Password *"
